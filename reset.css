@@ -1,0 +1,15 @@
+html, body, div{
+    font: inherit;
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	
+}
+
+body, html{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+  }

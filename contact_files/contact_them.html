@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact us</title>
+        <link rel="stylesheet" href="../reset.css"/>
+        <link href="contact_style.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="../nav_footer/nav_style.css" />
+        <link rel="stylesheet" href="../nav_footer/footer_style.css" />
+
+    </head>
+    <body>
+        <div class="page">
+
+        <nav class="nav">
+            <!-- Nav elements from left to right: homepage, products dropdown list, 
+                contact us, quiz, logo-->
+                <a id="home" href="../homepage_files/homepage.html">Home</a>
+            
+                <!-- Dropdown list with all the emotions for sale-->
+                <div class="dropdown">
+                    <div id="dropbtn">Our Products</div>
+                    <div class="dropdown_list">
+                        <a href="../products.html">Exuberance</a>
+                        <a href="../products.html">Nirvana</a>
+                        <a href="../products.html">Compathy</a>
+                        <a href="../products.html">Melancholy</a>
+                        <a href="../products.html">Leucocholy</a>
+                        <a href="../products.html">Callosity</a>
+                        <a href="../products.html">Sonder</a>
+                        <a href="../products.html">Presque-Vu</a>
+                        <a href="../products.html">Misslieness</a>
+                        
+                    </div>
+                </div>
+            
+                <a id="contact" href="../contact_files/contact_them.html">Contact us</a>
+                <a id="quiz" href="../quiz_files/quiz.html">Emotion Quiz!</a>
+                <img id="logo" src="../images/Calibrate-logos_white.png" alt="Calibrate"/>
+            </div>
+        </nav>
+
+        <h1>We love hearing from you!</h1>
+
+        <p> Please fill in your details below to send us a message.</p>
+        
+        <!--Make the form return information to itself upon submission and open the popup-->
+        <form action="" method= "post" target="_blank"  onsubmit="openPop()">
+            
+            <!--Form fields-->
+            <fieldset>
+                <label for="nameFirst">First Name</label>
+                <input id="nameFirst" name="nameFirst" required="" autofocus="" type="text" />
+            </fieldset>
+
+            <fieldset>
+                <label for="nameLast">Last Name</label>
+                <input id="nameLast" name="nameLast" required="" autofocus="" type="text" />    
+            </fieldset>
+
+            <fieldset>
+                <label for="nameLast">Email</label>
+                <input id="nameLast" name="nameLast" required="" autofocus="" type="email" />
+            </fieldset>
+
+            <fieldset id="complos">
+                <label for="complos">Compliments</label>
+                <input id="complos_inp" name="complos" required="" autofocus="" type="text" />
+            </fieldset>
+
+            <fieldset id="crits">
+                <label for="crits">Criticisms</label>
+                <input id="crits_inp" name="crits" required="" autofocus="" type="text" />
+            </fieldset>
+            
+            <!--When the user clicks on the submit button, we call a function to make the popup appear-->
+            <input id="sub_but" type="submit">
+        </form>          
+
+            <script type="text/javascript">
+            //The popup originally has display: none, display it when the user submits their form
+            function openPop() {
+                document.getElementById("thanks_pop").style.display = "block";
+              }
+            
+            // ...and close it when the person presses the 'x' button on the popup
+              function closePop() {
+                document.getElementById("thanks_pop").style.display = "none";
+              }
+            
+            </script>
+
+        <!-- The html for the popup-->
+        <div id="thanks_pop">
+            <button id="close" onclick="closePop()">&times;</button>
+            <h2>Thank you!</h2>
+            <p>Your opinion has been heard.</p>
+        </div>
+
+        <!--footer-->
+        <div class="footer">
+            <p>
+                2022 Calibrate, Copyright Unlimited ;)
+            </p>
+            <a href="#nameFirst">
+            <button id="return_to_top">Back to Top</button>
+            </a>
+        </div>
+    </div>
+    </body>
+        
+</html>

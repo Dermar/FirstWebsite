@@ -1,0 +1,50 @@
+* {
+  background-color: rgba(252, 252, 252, 0.846);
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* First set the dimensions and positioning of the footer*/
+.footer {
+  margin-top: auto;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  height: 3%;
+  width: 100%; 
+  align-self:flex-end;
+  background-color: rgb(136, 19, 136);
+  color:whitesmoke;
+}
+
+/* Position the copyright statement to the left*/
+.footer p{
+  order: 0;
+  font-size: smaller;
+  background-color: rgb(136, 19, 136);
+  
+}
+
+/* Place the back to top button to the bottom right and set its
+look when it's being hovered over or not*/
+.footer #return_to_top{
+  background-color: rgb(238, 216, 236);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 4px;
+  position: absolute;
+  top: inherit;
+  right: 0%;
+}
+
+.footer #return_to_top:hover{
+  background-color: rgb(220, 209, 209);
+}
+
+/* Shrink the footer's button in a smaller width*/
+@media screen and (max-width: 600px){
+  .footer #return_to_top{
+    width: 20%;
+    position: absolute;
+    left: 80%;
+  }
+}

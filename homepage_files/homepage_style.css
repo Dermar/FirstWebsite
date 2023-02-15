@@ -1,0 +1,104 @@
+* {
+    background-color: rgba(252, 252, 252, 0.846);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Create a background and a position for the quote*/
+.quote_block{
+  background-color: rgba(167, 164, 164, 0.74);
+  width: 75%;
+  height: 200px;
+  margin: 0 auto;
+  padding: 76px;
+  display: grid;
+  overflow: hidden;
+}
+
+/* Centre the quote*/
+h1{
+  margin: 0;
+  position: relative;
+  top: 280px;
+  padding: 30px;
+  font-size: larger;
+  transform: translateY(-50%);
+  background-color: rgba(215, 207, 207, 0.594);
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 1;
+}
+
+/* Place the dorian gray image behind the quote*/
+.quote_block img{
+  float: centre;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  width: 20em;
+  transform: translateY(-50%);
+  opacity: 0.5;
+  grid-column: 1;
+  grid-row: 1;
+
+}
+
+@media screen and (min-width: 600px){
+  h1{
+    position: relative;
+    top: 50%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  h1{
+    position: relative;
+    top: 60%;
+  }
+}
+
+/* Decorate the button to the quiz and move it away from the content*/
+#qPage_btn{
+  padding: 15px 30px;
+  font-size: medium;
+  text-decoration: none;
+  background-color: rgb(136, 19, 136);
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 5%;
+}
+
+#bottom_p{
+  margin-bottom: 30px;
+}
+
+/* Make the button ominous when you hover over it :) */
+#qPage_btn:hover{
+  background-color: black; 
+}
+
+/* Centre and create space around the paragraphs*/
+p{
+  padding: 8px;
+  font-size: larger;
+  margin: auto;
+  width: 60%;
+
+}
+
+/* Decorate the links in the first paragraph*/
+p a{
+  text-decoration: none;
+  color:rgb(136, 19, 136);
+}
+
+p a:hover{
+  text-decoration: underline;
+  color:rgb(136, 19, 136);
+}
